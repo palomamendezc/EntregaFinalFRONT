@@ -2,12 +2,17 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    
 }
 /* ir acomodando por orden*/
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 /* MOVER A MAIN*/
+.imagen1 img{
+    width: 100%;
+    height: auto;
+}
 h1{
     margin-right: 40px;
     margin-left: 40px;
@@ -20,18 +25,26 @@ h1{
     letter-spacing: -0.035em;
     color: #232C50;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h2{
+    text-align: center;
     color:#232C50;
 }
 .h2{
     background-color: #F3613C;
     color: white;
 }
+h3{
+    background-color: #FBEEE6;
+}
 /*MOVER A MAIN*/
 /*BOTONES*/
 .boton{
+    /*ver como centrar bien el boton*/
     padding: 10px;
     background-color: #F3603B;
     color: white;
@@ -58,42 +71,41 @@ h2{
 
 /*****header******/
 
+.menu{
+    display: none;
+}
 header{
+    width: 100%;
     margin-left: 11%;
-    margin-right: 11%;
+    margin-right: 10%;
     margin-top: 40px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content: space-between;
-    align-items: center;
 }
 header div nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 10px; 
 }
+/***header***/
 
 /***main***/
-
-main {
-    margin-left: 10%;
-    margin-right: 10%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}   /*ver si esto esta bien puesto a todo el main*/
-
+main{
+    width: 100%;
+    border: solid 1px orangered;
+}
 main section h1{
+    margin-left: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .p{
+    text-align: center;
     margin-left: 50px;
     margin-right: 60px;
     font-size: 16px;
@@ -102,17 +114,72 @@ main section h1{
     font-size: 16.2984px;
     line-height: 26px;
 }
-
+main section div button{
+    margin-top: 5%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+main section.subtitulo{
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
 .pgris{
+    text-align: center;
     font-size: 16px;
     color: #B3B2B7;
     font-weight: 500;
     font-size: 16.2984px;
     line-height: 26px;
 }
+main div.ventajas{
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+main div.ventajas section.ventajastitulos {
+    border-radius: 50px;
+    background-color: rgb(255, 239, 234);
+    width: 100%;
+}
+main div.ventajas section.ventajastitulos {
+    border-radius: 50px;
+    background-color: rgb(255, 239, 234);
+    width: 100%;
+}
 
-main div ul{
-    
+span.numeroventaja {
+    border-radius: 50px;
+    border-color: none;
+    background-color: #F3603B;
+    padding: 5px 10px;
+}
+
+span.titulo {
+    font-size: 20px;
+    color: #232C50;
+}
+/***main parte dos***/
+
+main section.articulos div.contenedora{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+span.h2estilo {
+    padding-bottom: 100px;
+}
+
+.img{
+    position: relative;
+    left: 150px;
 }
 
 
@@ -120,17 +187,12 @@ main div ul{
 
 
 
-/*
-main section div button{
-    margin-top: 20px;
-    margin-left: 40%;
-    margin-right: 40%;
-    margin-bottom: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
-*/
+
+
+
+/*footer{
+    background-color: #1E1E26;
+}*/
 
 
 
