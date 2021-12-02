@@ -8,12 +8,9 @@ body{
     font-family: 'Be Vietnam Pro', sans-serif;
     font-family: 'Outfit', sans-serif;
 }
-.menu{
-    display: none;
-}
+
 
 /*primera imagen grande*/
-
 
 /*BOTONES*/
 .boton{
@@ -40,47 +37,55 @@ body{
 
 header{
     width: 100%;
-    margin-top: 45px;
-    margin-left: 16px;
-    margin-bottom: 40px;
+    padding: 0px;
+    margin: 5% 0 5% ;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header a{
+    text-decoration: none;
+    color: #232C50;
+}
+.menu{
+    display: none;
+}
+
+.padre-1{
+    display: flex;
     justify-content: space-between;
 }
+header div.logoprincipal img{
+    margin-left: 10px;
+}
 header div.hamburguesa img{
-    margin-right: 30px;
+    margin-right: 10px;
+    position: relative;
+    left: 175px;
 }
-
-h2{
-    text-align: center;
-    color:#232C50;
-}
-/*esto no seria solamente al h2 seria a toda esa parte*/
-
 
 /***HEADER END***/
 
 /***MAIN***/
+
 .imagen1 img{
     width: 100%;
+}
+section.padre-2{
     display: flex;
-    align-content: center;
+    flex-direction: column;
 }
 h1{
-    margin-right: 30px;
-    margin-left: 60px;
-    margin-bottom: 13px;
-    padding-right: 25px;
+    margin: 0px 30px 15px 30px;
     font-style: normal;
     font-weight: bold;
     font-size: 35px;
-    line-height: 36px;
+    line-height: 45px;
     letter-spacing: -0.035em;
     color: #232C50;
     text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
 .p{
     margin-bottom: 20px;
@@ -95,17 +100,30 @@ h1{
     line-height: 26px;
 }
 /*BOTON GET STARTED*/
-main section div button{
+main section.padre-2 div button{
+    /* ASI LO HABIA HECHO ANTES
     margin-top: 5%;
     margin-left: 40%;
     margin-right: 30%;
     margin-bottom: 10%;
+    */
+    position: relative;
+    left: 144px;
+    /*
     display: flex;
     justify-content: center;
-    align-items: center;
-} 
+    align-items: center;*/
+}
+section.padre-3{
+    display: flex;
+    flex-direction: column;
+}
 /*H2*/
-main section.subtitulo{
+h2{
+    text-align: center;
+    color:#232C50;
+}
+main div.subtitulo{
     font-size: 18px;
     margin-bottom: 30px;
     margin-left: 40px;
@@ -125,12 +143,11 @@ main section.subtitulo{
     font-size: 16.2984px;
     line-height: 26px;
 }
-main section.ventajas{
-    margin-left: 15px;
-    margin-right: 10px;
-    margin-bottom: 20px;
+main div.ventajas{
+    margin: 0px 10px 20px 15px;
+    flex-wrap: wrap;
 }
-main section.ventajas div.ventajastitulos {
+main div.ventajas div.ventajastitulos {
     border-radius: 50px;
     background-color: rgb(255, 239, 234);
     width: 100%;
@@ -153,11 +170,28 @@ section p.contenido{
     text-align: justify;
     color: #B3B2B7;
     font-size: 15,5px;
+
 }
+/*main parte de articulos*/
+
+section.articulos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 span.h2estilo h2 {
     font-size: 30px;
     font-weight: bold;
     padding-bottom: 40px;
+}
+.pcolor2{
+    text-align: center;
+    font-size: 16px;
+    color: #B3B2B7;
+    font-weight: 500;
+    font-size: 16.2984px;
+    line-height: 26px;
 }
 section div.contenedora{
     margin-left: 40px;
@@ -177,9 +211,11 @@ article span.img img{
     margin-bottom: 20px;
     text-align: center;
 }
-/*ver como acomodar el boton debajo de los articles */
-.botonOrden{
+div.boton-orden{
+    margin: 30px 0px 30px 0px;
 }
+
+/*ver como acomodar el boton debajo de los articles */
 /*SEGUIR CON ULTIMA PARTE DEL MAIN*/
 
 
@@ -187,7 +223,11 @@ section.mainlast{
     width: 100%;
     background-color: #F3613C;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 section.mainlast span.h2font h2{
     text-align: center;
     font-weight:bold;
@@ -204,8 +244,6 @@ section.mainlast span.h2font h2{
     border: solid 1px white;
     color: #F3603B;
     border-radius: 50px;
-    position: relative;
-    left: 150px;
 }
 /***MAIN END***/
 
@@ -214,23 +252,19 @@ footer{
     width: 100%;
     padding-bottom: 30px;
     background-color: #1E1E26;
+    display: flex;
+    flex-direction: column;
 }
-footer div form label.estilo {
+label.estilo {
     margin-left: 15px;
-    padding: 13px;
-    padding-right: 50px;
-    padding-left: 30px;
+    padding: 13px 50px 13px 30px;
     background-color: white;
     color:#B3B2B7;
     border-radius: 20px;
 }
 .botonGO{
-    margin-top: 30px;
-    margin-bottom: 50px;
-    margin-left: 10px;
-    padding: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
+    margin: 30px 0px 50px 10px;
+    padding: 10px 20px 10px 20px;
     background-color: #F3603B;
     color: white;
     border: solid 1px #F3603B ;
@@ -270,20 +304,221 @@ footer div.i a img{
     width: 30px;
 }
 
-footer img.logo1 {
+footer section img.logo1 {
     margin-bottom: 10px;
     position: relative;
     left: 110px;
 }
 
 footer p.derechos{
-    background-color: #1E1E26
+    background-color: #1E1E26;
     font-size: 13px;
-    margin-bottom: 0px;
-    color:#B3B2B7;
+    color: #B3B2B7;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/***FOOTER END***/
 
+/*MEDIA*/
+@media screen and (min-width:376px){
+
+/*header*/
+.menu{
+    display: inline;
+}
+.hamburguesa{
+    display: none;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.padre-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 300px;
+}
+
+header div.menu nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; 
+}/*
+
+header .logoprincipal{
+    margin-left: 20px;
+}
+/***header end***/
+
+/***MAIN***/
+
+.imagen1 img{
+    padding-right: 80px;
+    width: fit-content;
+    flex-wrap: nowrap;
+    /*position: relative;
+    left: 450px;*/
+}
+section.padre-2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+div.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+h1{
+    text-align: left ;
+    font-size: 70px;
+    line-height: 65px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    padding-right: 96px;
+    padding-left: 55px;
+    
+    
+}
+.p{
+    font-size: 20px;
+    text-align: left;
+    padding-right: 280px;
+    padding-left: 83px;
+    color: black;
+}
+main section.padre-2 div button{
+    padding: 10px 25px 10px 25px;
+    position: absolute;
+    top: 630px;
+    left: 120px;/*ver como iba el boton*/
+}
+/*ver si esta bien moverlo asi*/
+section.padre-3{
+    padding: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.subtitulo1{
+    padding-right: 80px ;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: left;
+    font-size: 45px;
+    line-height: 40px;
+} 
+.pcolor1{
+    padding-right: 150px;
+    text-align: left;
+    font-size: 20px;
+    color: black;
+    
+}
+main div.ventajas{
+    margin-top: 30px;
+    margin-right: 85px;
+    flex-wrap: nowrap;
+}
+main div.ventajas div.ventajastitulos {
+    background-color: white;
+}
+span.numeroventaja{
+    padding:  5px 20px 5px 20px ;
+    margin-right: 15px;
+}
+span.titulo{
+    color: black;
+}
+section p.contenido{
+    margin-left: 75px;
+    margin-right: ;
+    text-align: left;
+}
+section div.contenedora{
+    margin-left: 120px;
+    display: flex;
+    flex-direction: row;
+}
+.h4orden{
+    margin-right: 140px ;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pcolor2{
+    margin-right: 120px;
+}
+div.boton-orden{
+    margin: 50px 0px 100px;
+}
+
+/*mainlast*/
+
+section.mainlast{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+section.mainlast span.h2font h2{
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-bottom: 30px;
+    width: 430px;
+}
+.boton1{
+    margin: 0px;
+}
+/*MAIN END*/
+
+/***FOOTER***/
+
+footer{
+    height: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+footer section div form {
+    margin-top: 35px;
+    margin-right: 40px;
+}
+footer section.ordenlistas{
+    margin-top: 50px;
+    gap: 80px;
+}
+footer section div.i{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: ;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+}
