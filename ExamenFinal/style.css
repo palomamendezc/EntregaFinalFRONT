@@ -9,9 +9,6 @@ body{
     font-family: 'Outfit', sans-serif;
 }
 
-
-/*primera imagen grande*/
-
 /*BOTONES*/
 .boton {
     padding: 10px;
@@ -21,7 +18,6 @@ body{
     border-radius: 50px;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
-
 .boton2{
     padding: 10px 25px;
     background-color:#F3603B;
@@ -49,7 +45,6 @@ header a{
 .menu{
     display: none;
 }
-
 .padre-1{
     display: flex;
     justify-content: space-between;
@@ -100,18 +95,8 @@ h1{
 }
 /*BOTON GET STARTED*/
 main section.padre-2 div button{
-    /* ASI LO HABIA HECHO ANTES
-    margin-top: 5%;
-    margin-left: 40%;
-    margin-right: 30%;
-    margin-bottom: 10%;
-    */
     position: relative;
     left: 144px;
-    /*
-    display: flex;
-    justify-content: center;
-    align-items: center;*/
 }
 section.padre-3{
     display: flex;
@@ -162,14 +147,12 @@ span.titulo {
     font-size: 20px;
     color: #232C50;
 }
-/*seguir con el color gris de los p debajo de 01,02,03*/
 section p.contenido{
     margin-top: 10px;
     margin-bottom: 35px;
     text-align: justify;
     color: #B3B2B7;
     font-size: 15,5px;
-
 }
 /*main parte de articulos*/
 
@@ -178,7 +161,6 @@ section.articulos{
     flex-direction: column;
     align-items: center;
 }
-
 span.h2estilo h2 {
     font-size: 30px;
     font-weight: bold;
@@ -214,9 +196,7 @@ div.boton-orden{
     margin: 30px 0px 30px 0px;
 }
 
-/*ver como acomodar el boton debajo de los articles */
-/*SEGUIR CON ULTIMA PARTE DEL MAIN*/
-
+/*MAIN LAST*/
 
 section.mainlast{
     width: 100%;
@@ -251,6 +231,9 @@ footer{
     width: 100%;
     padding-bottom: 30px;
     background-color: #1E1E26;
+
+}
+footer section.footer{
     display: flex;
     flex-direction: column;
 }
@@ -278,7 +261,7 @@ footer section.ordenlistas{
     justify-content: space-around;
     align-items: flex-start;
 }
-footer div nav.lista ul{
+footer div.lista ul{
     color: white;
     display: flex;
     flex-direction: column;
@@ -303,13 +286,11 @@ footer div.i {
 footer div.i a img{
     width: 30px;
 }
-
 footer section img.logo1 {
     margin-bottom: 10px;
     position: relative;
     left: 110px;
 }
-
 footer p.derechos{
     background-color: #1E1E26;
     font-size: 13px;
@@ -329,7 +310,6 @@ footer p.derechos{
     background-color: rgb(255, 239, 234);
     border: solid 1px rgb(255, 239, 234);
 }
-
 .menu{
     display: inline;
 }
@@ -340,7 +320,6 @@ header {
     display: flex;
     justify-content: space-around;
 }
-
 .padre-1{
     width: 100%;
     display: flex;
@@ -348,17 +327,13 @@ header {
     align-items: center;
     gap: 300px;
 }
-
 header div.menu nav ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px; 
-}/*
-
-header .logoprincipal{
-    margin-left: 20px;
 }
+
 /***header end***/
 
 /***MAIN***/
@@ -367,8 +342,6 @@ header .logoprincipal{
     padding-right: 80px;
     width: fit-content;
     flex-wrap: nowrap;
-    /*position: relative;
-    left: 450px;*/
 }
 section.padre-2{
     display: flex;
@@ -390,8 +363,6 @@ h1{
     margin-bottom: 20px;
     padding-right: 96px;
     padding-left: 55px;
-    
-    
 }
 .p{
     font-size: 20px;
@@ -404,9 +375,9 @@ main section.padre-2 div button{
     padding: 10px 25px 10px 25px;
     position: absolute;
     top: 630px;
-    left: 120px;/*ver como iba el boton*/
+    left: 120px;
 }
-/*ver si esta bien moverlo asi*/
+
 section.padre-3{
     padding: 70px;
     display: flex;
@@ -437,6 +408,7 @@ main div.ventajas div.ventajastitulos {
     background-color: white;
 }
 span.numeroventaja{
+    color: white;
     padding:  5px 20px 5px 20px ;
     margin-right: 15px;
 }
@@ -488,8 +460,7 @@ section.mainlast span.h2font h2{
 /*MAIN END*/
 
 /***FOOTER***/
-
-footer{
+footer section.footer{
     height: 300px;
     display: flex;
     flex-direction: row-reverse;
@@ -520,10 +491,11 @@ footer section.iconos div img.logo1{
     order: -1;
 }
 footer p.derechos{
-    position: absolute;
-    right: 10vh;
-    bottom: -180%;
-}/*ver como mover esto*/
+    margin-top: -120px;
+    margin-bottom: 60px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: flex-end;
 }
 a:hover {
     font-weight: bold;
@@ -531,25 +503,4 @@ a:hover {
     transition:
     color 0.7s;
 }
-
-
-/*seguir con cambiar de lugar el logo con los iconos*/
-
-/*color de los numeros 01, 02, 03 ponerle que se agranden los titulos con un hover*/
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
 }
