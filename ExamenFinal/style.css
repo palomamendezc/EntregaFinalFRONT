@@ -13,8 +13,7 @@ body{
 /*primera imagen grande*/
 
 /*BOTONES*/
-.boton{
-    /*ver como centrar bien el boton*/
+.boton {
     padding: 10px;
     background-color: #F3603B;
     color: white;
@@ -255,6 +254,7 @@ footer{
     display: flex;
     flex-direction: column;
 }
+
 label.estilo {
     margin-left: 15px;
     padding: 13px 50px 13px 30px;
@@ -325,6 +325,11 @@ footer p.derechos{
 @media screen and (min-width:376px){
 
 /*header*/
+.boton:hover, .boton2:hover, .boton1:hover, .botonGO:hover{
+    background-color: rgb(255, 239, 234);
+    border: solid 1px rgb(255, 239, 234);
+}
+
 .menu{
     display: inline;
 }
@@ -381,7 +386,7 @@ h1{
     text-align: left ;
     font-size: 70px;
     line-height: 65px;
-    margin-left: 50px;
+    margin-left: 55px;
     margin-bottom: 20px;
     padding-right: 96px;
     padding-left: 55px;
@@ -498,13 +503,39 @@ footer section.ordenlistas{
     margin-top: 50px;
     gap: 80px;
 }
-footer section div.i{
+footer section.iconos{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: ;
+    justify-content: center;
+}
+footer section.iconos div.i{
+    margin-left: -40px;
+    margin-top: 80px;
+    gap: 25px;
+}
+footer section.iconos div img.logo1{
+    margin-top: 60px;
+    margin-left: -30px;
+    display: flex;
+    order: -1;
+}
+footer p.derechos{
+    position: absolute;
+    right: 10vh;
+    bottom: -180%;
+}/*ver como mover esto*/
+}
+a:hover {
+    font-weight: bold;
+    color: #8f3926;
+    transition:
+    color 0.7s;
 }
 
 
+/*seguir con cambiar de lugar el logo con los iconos*/
+
+/*color de los numeros 01, 02, 03 ponerle que se agranden los titulos con un hover*/
 
 
 
